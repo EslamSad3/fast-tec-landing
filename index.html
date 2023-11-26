@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast Tech</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css"
+    />
+    <!-- Swipper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
+  </head>
+  <body>
+    <header class="py-4 lg:pt-3 lg:pb-5 bg-primary-500">
+      <div
+        class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0"
+      >
+        <!-- logo -->
+        <div class="flex justify-center lg:justify-normal">
+          <a href="#" class="alogo">
+            <img src="./assets/imgs/Fastteclogo(png)1.png" alt="" />
+          </a>
+        </div>
+
+        <div
+          class="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0"
+        >
+          <div
+            class="flex justify-center items-center gap-x-2 lg:justify-normal"
+          >
+            <a href="#about" class="h4 after-header relative">About</a>
+          </div>
+          <div
+            class="flex justify-center items-center gap-x-2 lg:justify-normal"
+          >
+            <a href="#services" class="h4 after-header relative">Services</a>
+          </div>
+          <div
+            class="flex justify-center items-center gap-x-2 lg:justify-normal"
+          >
+            <a href="#contact" class="h4 after-header relative">Contact US</a>
+          </div>
+
+          <button
+            class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0"
+          >
+            <a href="#download">Download</a>
+          </button>
+
+          <!-- mobile nav -->
+          <nav
+            class="mnav bg-primary-600 fixed w-[300px] top-0 -left-[300px] h-screen shadow-2xl transition-all duration-300 z-20 lg:hidden"
+          >
+            <!-- nav toggle btn -->
+            <div
+              class="mnav__close-btn bg-primary-900 w-8 h-8 relative -right-full top-5 flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all"
+            >
+              <i
+                class="ri-arrow-right-s-line mnav__close-btn-icon text-2xl text-accent-500"
+              ></i>
+            </div>
+
+            <!-- Nav Elemnts -->
+            <div class="px-12 flex flex-col gap-y-12 h-full">
+              <a href="#" class="">
+                <img src="./assets/imgs/Fastteclogo(png)1.png" alt="" />
+              </a>
+              <!-- list -->
+              <ul>
+                <li>
+                  <a
+                    href="#about"
+                    class="text-accent-500 h3 after-header relative"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="text-accent-500 h3 after-header relative"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#download"
+                    class="text-accent-500 h3 after-header relative"
+                    >Download</a
+                  >
+                </li>
+                <li>
+                  <!-- <div
+                    class="flex items-center bg-primary-700 text-white py-[10px] px-[26px] w-max gap-x-2 mb-[26px] rounded-[15px] mx-0 xl:mx-0 btn btn-sm btn-accent cursor-pointer"
+                  >
+                    <i class="ri-download-cloud-line text-3xl"></i>
+                    <div>DownLoad Now</div>
+                  </div> -->
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <!-- start Hero -->
+    <section class="hero bg-primary-700 py-12 xl:pt-12 xl:pb-0 overflow-hidden">
+      <div class="container mx-auto h-full">
+        <!-- text & image -->
+        <div
+          class="flex flex-col xl:flex-row items-center justify-between h-full"
+        >
+          <div class="py-12 hero__text xl:w-[48%] text-left xl:text-left">
+            <h1 class="h1 mb-6">
+              why you call a geek, when you can call an
+              <span class="text-accent-500 font-bold">expert</span> ?
+            </h1>
+            <p class="mb-[42px] md:maxw-xl">
+              Welcome to the future of hassle-free living, where broken things
+              meet their match. <br />
+              At <span class="text-accent-500 font-bold">Fast Tec</span>, we're
+              not just technicians; we're your go-to problem solvers, dedicated
+              to bringing back functionality to the things that matter most.
+            </p>
+
+            <div
+              class="flex items-center bg-primary-700 text-white py-[10px] px-[26px] w-max gap-x-2 mb-[26px] rounded-[15px] mx-0 xl:mx-0 btn btn-sm btn-outline cursor-pointer"
+            >
+              <i class="ri-download-cloud-line text-3xl"></i>
+              <div>DownLoad Now</div>
+            </div>
+          </div>
+          <div class="py-12 max-w-[600px] self-end hero__image hidden xl:flex">
+            <img src="./assets/imgs/Fastteclogo(png)1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Hero -->
+
+    <!-- start About -->
+    <section class="about section" id="about">
+      <div class="container mx-auto">
+        <!-- wrapper -->
+        <h1 class="h1 text-center mb-10">About</h1>
+        <div class="flex flex-col xl:flex-row gap-y-6 justify-between">
+          <!-- item -->
+          <div
+            class="stats__item flex-1 xl:border-r flex flex-col items-center"
+          >
+            <div
+              class="text-4xl xl:text-[64px] font-AcuminItPro text-amber-500 xl:mb-2"
+            >
+              +500
+            </div>
+            <div>Happy Customer</div>
+          </div>
+          <!-- item -->
+          <div
+            class="stats__item flex-1 xl:border-r flex flex-col items-center"
+          >
+            <div
+              class="text-4xl xl:text-[64px] font-AcuminItPro text-amber-500 xl:mb-2"
+            >
+              +151
+            </div>
+            <div>Expert Technicians</div>
+          </div>
+          <!-- item -->
+          <div
+            class="stats__item flex-1 xl:border-r flex flex-col items-center"
+          >
+            <div
+              class="text-4xl xl:text-[64px] font-AcuminItPro text-amber-500 xl:mb-2"
+            >
+              +10
+            </div>
+            <div>Total Branches</div>
+          </div>
+          <!-- item -->
+          <div class="stats__item flex-1 flex flex-col items-center">
+            <div
+              class="text-4xl xl:text-[64px] font-AcuminItPro text-amber-500 xl:mb-2"
+            >
+              +10
+            </div>
+            <div>Years of experince</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end About -->
+
+    <!-- start services -->
+    <section class="services section" id="services">
+      <!-- bg -->
+      <div
+        class="bg-primary-700 max-w-[1466px] mx-4 xl:mx-auto rounded-[15px] xl:pt-[70px] px-6 xl:px-0 relative h-[368px] flex items-center xl:items-start -z-10"
+      >
+        <div class="container mx-auto">
+          <!-- text -->
+          <div
+            class="services__top flex items-center flex-col xl:flex-row xl:mb-[60px]"
+          >
+            <h2
+              class="h2 text-white flex-1 mb-4 xl:mb-0 text-center xl:text-left"
+            >
+              Our Services
+            </h2>
+            <p class="text-white flex-1 text-left max-w-2xl">
+              Lorem ipsum dolor sit, amet consectetur<br />
+              adipisicing elit. Vero accusamus ratione veritatis error <br />
+              impedit provident ipsam aspernatur, officiis sit obcaecati <br />
+              saepe consequuntur soluta deleniti nisi praesentium cum, porro ab
+              quae.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- grid container -->
+      <div class="container mx-auto mt-8 xl:-mt-[144px] text-primary-700">
+        <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
+          <!-- grid item -->
+          <div
+            class="services__item bg-secondary-600 p-[30px] rounded-[12px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
+          >
+            <!-- grid item icon -->
+            <div class="mb-[15px]">
+              <i class="ri-home-4-fill text-4xl text-accent-500"></i>
+            </div>
+
+            <!-- grid item title -->
+            <h3 class="h3 mb-[10px] text-white">Experts Techinicans</h3>
+            <!--grid item description   -->
+            <p class="text-slate-50 font-light leading-normal max-w-[300px]">
+              Lorem ipsum dolor sit amet consectetur adipisic alias totam ve!
+            </p>
+          </div>
+          <!-- grid item -->
+          <div
+            class="services__item bg-secondary-600 p-[30px] rounded-[12px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
+          >
+            <!-- grid item icon -->
+            <div class="mb-[15px]">
+              <i class="ri-home-4-fill text-4xl text-accent-500"></i>
+            </div>
+
+            <!-- grid item title -->
+            <h3 class="h3 mb-[10px] text-white">Experts Techinicans</h3>
+            <!--grid item description   -->
+            <p class="text-slate-50 font-light leading-normal max-w-[300px]">
+              Lorem ipsum dolor sit amet consectetur adipisic alias totam ve!
+            </p>
+          </div>
+          <!-- grid item -->
+          <div
+            class="services__item bg-secondary-600 p-[30px] rounded-[12px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
+          >
+            <!-- grid item icon -->
+            <div class="mb-[15px]">
+              <i class="ri-home-4-fill text-4xl text-accent-500"></i>
+            </div>
+
+            <!-- grid item title -->
+            <h3 class="h3 mb-[10px] text-white">Experts Techinicans</h3>
+            <!--grid item description   -->
+            <p class="text-slate-50 font-light leading-normal max-w-[300px]">
+              Lorem ipsum dolor sit amet consectetur adipisic alias totam ve!
+            </p>
+          </div>
+          <!-- grid item -->
+          <div
+            class="services__item bg-secondary-600 p-[30px] rounded-[12px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
+          >
+            <!-- grid item icon -->
+            <div class="mb-[15px]">
+              <i class="ri-home-4-fill text-4xl text-accent-500"></i>
+            </div>
+
+            <!-- grid item title -->
+            <h3 class="h3 mb-[10px] text-white">Experts Techinicans</h3>
+            <!--grid item description   -->
+            <p class="text-slate-50 font-light leading-normal max-w-[300px]">
+              Lorem ipsum dolor sit amet consectetur adipisic alias totam ve!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end services -->
+
+    <!-- start download -->
+    <section
+      class="download section bg-primary-700 py-12 xl:pt-12 xl:pb-0 overflow-hidden"
+      id="download"
+    >
+      <div class="container mx-auto h-full">
+        <!-- text & image -->
+        <div
+          class="flex flex-col xl:flex-row items-center justify-between h-full"
+        >
+          <div class="py-12 download__text xl:w-[48%] text-left xl:text-left">
+            <h1 class="h1 mb-6">
+              You Can Download Our App Now<span class="text-accent-500"
+                >...</span
+              >
+              <br />
+              We're On Google Play Store And Apple Store<span
+                class="text-accent-500"
+                >.</span
+              >
+            </h1>
+
+            <div class="flex flex-col xl:flex-row items-center gap-x-3">
+              <div
+                class="flex items-center bg-primary-700 text-white py-[10px] px-[26px] w-max gap-x-2 mb-[26px] rounded-[15px] mx-0 xl:mx-0 btn btn-sm btn-outline cursor-pointer"
+              >
+                <i class="ri-google-play-line text-3xl text-secondary-400"></i>
+                <div>DownLoad</div>
+              </div>
+              <div
+                class="flex items-center bg-primary-700 text-white py-[10px] px-[26px] w-max gap-x-2 mb-[26px] rounded-[15px] mx-0 xl:mx-0 btn btn-sm btn-outline cursor-pointer"
+              >
+                <i class="ri-apple-fill text-3xl text-secondary-400"></i>
+                <div>DownLoad</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="py-12 max-w-[600px] self-end download__image hidden xl:flex"
+          >
+            <img src="./assets/imgs/Fastteclogo(png)1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end download -->
+    <!-- start contact -->
+    <section
+      class="download section py-12 xl:pt-12 xl:pb-0 overflow-hidden"
+      id="contact"
+    >
+      <div class="container mx-auto h-full">
+        <!-- text & image -->
+        <div
+          class="flex flex-row xl:flex-row items-center justify-between h-full"
+        >
+          <div class="py-12 download__text xl:w-[48%] text-left">
+            <h1 class="h1 mb-6 pt-[50PX]">
+              Don<span class="text-accent-500">'</span
+              ><span class="normal-case">t</span> hesitate to get in touch<span
+                class="text-accent-500"
+                >.</span
+              >
+            </h1>
+
+            <div class="flex flex-row xl:flex-row items-center gap-x-2">
+              <div
+                class="flex items-center btn-outline text-accent-500 p-[15px] rounded-[10px] w-max gap-x-2 mb-[26px] mx-0 xl:mx-0 cursor-pointer"
+              >
+                <i class="ri-facebook-fill text-3xl"></i>
+              </div>
+              <div
+                class="flex items-center btn-outline text-accent-500 p-[15px] rounded-[10px] w-max gap-x-2 mb-[26px] mx-0 xl:mx-0 cursor-pointer"
+              >
+                <i class="ri-twitter-fill text-3xl"></i>
+              </div>
+              <div
+                class="flex items-center btn-outline text-accent-500 p-[15px] rounded-[10px] w-max gap-x-2 mb-[26px] mx-0 xl:mx-0 cursor-pointer"
+              >
+                <i class="ri-instagram-fill text-3xl"></i>
+              </div>
+              <div
+                class="flex items-center btn-outline text-accent-500 p-[15px] rounded-[10px] w-max gap-x-2 mb-[26px] mx-0 xl:mx-0 cursor-pointer"
+              >
+                <i class="ri-youtube-fill text-3xl"></i>
+              </div>
+              <div
+                class="flex items-center btn-outline text-accent-500 p-[15px] rounded-[10px] w-max gap-x-2 mb-[26px] mx-0 xl:mx-0 cursor-pointer"
+              >
+                <i class="ri-linkedin-box-fill text-3xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contact -->
+
+    <div class="temp h-[4000px]"></div>
+    <!-- scripts -->
+    <!-- main -->
+    <script src="./js/main.js"></script>
+    <!-- swipper -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- Scroll -->
+  </body>
+</html>

@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "AcuminBdItPro";
+    src: url("./../fonts/Acumin-BdItPro.otf") fromat("otf");
+  }
+  @font-face {
+    font-family: "AcuminBdPro";
+    src: url("./../fonts/Acumin-BdPro.otf") fromat("otf");
+  }
+  @font-face {
+    font-family: "AcuminItPro";
+    src: url("./../fonts/Acumin-ItPro.otf") fromat("otf");
+  }
+  @font-face {
+    font-family: "AcuminRPro";
+    src: url("./../fonts/Acumin-RPro.otf") fromat("otf");
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+body {
+  @apply bg-primary-600 text-accent-100 text-[17px] leading-8 font-AcuminRPro h-[5000px];
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply leading-[120%];
+}
+
+.h1 {
+  @apply text-[36px] xl:text-[64px] font-AcuminBdPro capitalize;
+}
+
+.h2 {
+  @apply text-[30px] xl:text-[44px] font-AcuminBdItPro capitalize tracking-[0.44px];
+}
+.h3,
+.h4,
+.h5,
+.h6 {
+  @apply text-[20px] xl:text-[26px] font-AcuminRPro uppercase;
+}
+
+.btn {
+  @apply rounded-lg px-5 uppercase tracking-[1.02px] flex items-center justify-center transition-all;
+}
+
+.btn-sm {
+  @apply h-14 px-5 mt-5;
+}
+.btn-lg {
+  @apply h-16 px-[50px];
+}
+
+.btn-accent {
+  @apply bg-accent-600 text-white hover:bg-secondary-600;
+}
+
+.btn-white {
+  @apply bg-white text-secondary-600 hover:bg-accent-500 hover:text-primary-700;
+}
+
+.btn-outline {
+  @apply bg-transparent border-2 border-accent-500 text-white hover:bg-accent-500 hover:border-transparent hover:text-primary-600;
+}
+.section {
+  @apply py-12 xl:py-[150px];
+}
+
+.alogo {
+  @apply w-[100px] h-[85px];
+}
+
+.after-header {
+  @apply after:content-[''] after:bg-accent-400 after:absolute after:bottom-0 after:left-0  after:w-[20%]   hover:after:w-full after:h-[5px]  after:transition-all after:duration-300 py-2 cursor-pointer inline-block;
+}
+
+.bg-services {
+  background-image: url("./../assets/imgs/Fastteclogosvg1.svg");
+}
