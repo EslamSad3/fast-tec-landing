@@ -25,17 +25,17 @@
   scroll-behavior: smooth;
 }
 body {
-  @apply bg-primary-600 text-accent-100 text-[17px] leading-8 font-AcuminRPro h-[5000px];
+  @apply bg-primary-600 text-accent-100 text-[17px]  font-AcuminRPro h-[5000px];
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   @apply leading-[120%];
-}
+} */
 
 .h1 {
   @apply text-[36px] xl:text-[64px] font-AcuminBdPro capitalize;
@@ -71,7 +71,7 @@ h6 {
 }
 
 .btn-outline {
-  @apply bg-transparent border-2 border-accent-500 text-white hover:bg-accent-500 hover:border-transparent hover:text-primary-600;
+  @apply bg-transparent border-2 border-accent-500 text-white hover:bg-primary-600 hover:border-transparent hover:text-primary-100;
 }
 .section {
   @apply py-12 xl:py-[150px];
@@ -79,6 +79,9 @@ h6 {
 
 .alogo {
   @apply w-[100px] h-[85px];
+}
+.footer_logo{
+  @apply w-[150] h-[200px]
 }
 
 .after-header {

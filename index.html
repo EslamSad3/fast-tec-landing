@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,80 +30,29 @@
         <div
           class="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0"
         >
+          <!-- <div
+            class="flex justify-center items-center gap-x-2 lg:justify-normal"
+          >
+            <a href="#about" class="h4 after-header relative">عن البرنامج</a>
+          </div> -->
           <div
             class="flex justify-center items-center gap-x-2 lg:justify-normal"
           >
-            <a href="#about" class="h4 after-header relative">About</a>
+            <a href="#services" class="h4 after-header relative">الخدمات</a>
           </div>
           <div
             class="flex justify-center items-center gap-x-2 lg:justify-normal"
           >
-            <a href="#services" class="h4 after-header relative">Services</a>
-          </div>
-          <div
-            class="flex justify-center items-center gap-x-2 lg:justify-normal"
-          >
-            <a href="#contact" class="h4 after-header relative">Contact US</a>
+            <a href="#contact" class="h4 after-header relative">التواصل</a>
           </div>
 
           <button
             class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0"
           >
-            <a href="#download">Download</a>
+            <a href="#download">التحميل</a>
           </button>
 
           <!-- mobile nav -->
-          <nav
-            class="mnav bg-primary-600 fixed w-[300px] top-0 -left-[300px] h-screen shadow-2xl transition-all duration-300 z-20 lg:hidden"
-          >
-            <!-- nav toggle btn -->
-            <div
-              class="mnav__close-btn bg-primary-900 w-8 h-8 relative -right-full top-5 flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all"
-            >
-              <i
-                class="ri-arrow-right-s-line mnav__close-btn-icon text-2xl text-accent-500"
-              ></i>
-            </div>
-
-            <!-- Nav Elemnts -->
-            <div class="px-12 flex flex-col gap-y-12 h-full">
-              <a href="#" class="">
-                <img src="./assets/imgs/Fastteclogo(png)1.png" alt="" />
-              </a>
-              <!-- list -->
-              <ul>
-                <li>
-                  <a
-                    href="#about"
-                    class="text-accent-500 h3 after-header relative"
-                    >About</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#services"
-                    class="text-accent-500 h3 after-header relative"
-                    >Services</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#download"
-                    class="text-accent-500 h3 after-header relative"
-                    >Download</a
-                  >
-                </li>
-                <li>
-                  <!-- <div
-                    class="flex items-center bg-primary-700 text-white py-[10px] px-[26px] w-max gap-x-2 mb-[26px] rounded-[15px] mx-0 xl:mx-0 btn btn-sm btn-accent cursor-pointer"
-                  >
-                    <i class="ri-download-cloud-line text-3xl"></i>
-                    <div>DownLoad Now</div>
-                  </div> -->
-                </li>
-              </ul>
-            </div>
-          </nav>
         </div>
       </div>
     </header>
@@ -116,24 +65,26 @@
         <div
           class="flex flex-col xl:flex-row items-center justify-between h-full"
         >
-          <div class="py-12 hero__text xl:w-[48%] text-left xl:text-left">
-            <h1 class="h1 mb-6">
-              why you call a geek, when you can call an
-              <span class="text-accent-500 font-bold">expert</span> ?
-            </h1>
-            <p class="mb-[42px] md:maxw-xl">
-              Welcome to the future of hassle-free living, where broken things
-              meet their match. <br />
-              At <span class="text-accent-500 font-bold">Fast Tec</span>, we're
-              not just technicians; we're your go-to problem solvers, dedicated
-              to bringing back functionality to the things that matter most.
-            </p>
+          <div class="py-12 xl:w-[48%] text-right xl:text-right">
+            <h2 class="mb-[42px] md:maxw-xl h6">
+              شركة فاست تك شركة كويتية متخصصة في تقديم خدمات الصيانة المتكاملة
+              للمنازل بطريقة جديده وحديثه في مجال الصيانة عن طريق الانترنت
+              بالتعامل مع فريق كامل متخصص من مزودى الخدمات المتميزين بالمهارة
+              والخبرة وجديرين بالثقة وخضعوا لاختبارات وتقييمات شاملة تحت ايدى
+              متخصصين من المهندسين وحيث يعتبر تطبيق فاست تك هو التطبيق الأول
+              والفريد من نوعه في خدمات الصيانة عبر الانترنت في سهولة التعامل
+              والتواصل مع مزودى الخدمات عن طريق موقع العميل .
+            </h2>
 
             <div
               class="flex items-center bg-primary-700 text-white py-[10px] px-[26px] w-max gap-x-2 mb-[26px] rounded-[15px] mx-0 xl:mx-0 btn btn-sm btn-outline cursor-pointer"
             >
               <i class="ri-download-cloud-line text-3xl"></i>
-              <div>DownLoad Now</div>
+              <div>
+                <a href="#download" class="text-accent-500 h3 down_now"
+                  >تحميل الآن</a
+                >
+              </div>
             </div>
           </div>
           <div class="py-12 max-w-[600px] self-end hero__image hidden xl:flex">
@@ -145,56 +96,7 @@
     <!-- end Hero -->
 
     <!-- start About -->
-    <section class="about section" id="about">
-      <div class="container mx-auto">
-        <!-- wrapper -->
-        <h1 class="h1 text-center mb-10">About</h1>
-        <div class="flex flex-col xl:flex-row gap-y-6 justify-between">
-          <!-- item -->
-          <div
-            class="stats__item flex-1 xl:border-r flex flex-col items-center"
-          >
-            <div
-              class="text-4xl xl:text-[64px] font-AcuminItPro text-amber-500 xl:mb-2"
-            >
-              +500
-            </div>
-            <div>Happy Customer</div>
-          </div>
-          <!-- item -->
-          <div
-            class="stats__item flex-1 xl:border-r flex flex-col items-center"
-          >
-            <div
-              class="text-4xl xl:text-[64px] font-AcuminItPro text-amber-500 xl:mb-2"
-            >
-              +151
-            </div>
-            <div>Expert Technicians</div>
-          </div>
-          <!-- item -->
-          <div
-            class="stats__item flex-1 xl:border-r flex flex-col items-center"
-          >
-            <div
-              class="text-4xl xl:text-[64px] font-AcuminItPro text-amber-500 xl:mb-2"
-            >
-              +10
-            </div>
-            <div>Total Branches</div>
-          </div>
-          <!-- item -->
-          <div class="stats__item flex-1 flex flex-col items-center">
-            <div
-              class="text-4xl xl:text-[64px] font-AcuminItPro text-amber-500 xl:mb-2"
-            >
-              +10
-            </div>
-            <div>Years of experince</div>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <!-- end About -->
 
     <!-- start services -->
@@ -209,23 +111,23 @@
             class="services__top flex items-center flex-col xl:flex-row xl:mb-[60px]"
           >
             <h2
-              class="h2 text-white flex-1 mb-4 xl:mb-0 text-center xl:text-left"
+              class="h1 text-white flex-1 mb-4 xl:mb-0 text-center xl:text-right"
             >
-              Our Services
+              خدماتنا
             </h2>
-            <p class="text-white flex-1 text-left max-w-2xl">
-              Lorem ipsum dolor sit, amet consectetur<br />
-              adipisicing elit. Vero accusamus ratione veritatis error <br />
-              impedit provident ipsam aspernatur, officiis sit obcaecati <br />
-              saepe consequuntur soluta deleniti nisi praesentium cum, porro ab
-              quae.
+            <p class="h5 text-white flex-1 text-right max-w-2xl">
+              تقدم شركة فاست تك تطبيق خاص بخدمات الصيانة المتكاملة للمنازل
+              والمبانى بطريقة جديدة ومبتكرة ويعتبر فاست تك التطبيق الأول في
+              الكويت يتيح عملية فتح التطبيق والبحث عن اقرب مزود خدمات بسهولة
+              وسرعه ما عليك غير فتح التطبيق والبحث عن اقرب مزود خدمات صيانة قريب
+              اليك.
             </p>
           </div>
         </div>
       </div>
 
       <!-- grid container -->
-      <div class="container mx-auto mt-8 xl:-mt-[144px] text-primary-700">
+      <div class="container mx-auto mt-8 xl:-mt-[100px] text-primary-700">
         <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
           <!-- grid item -->
           <div
@@ -233,14 +135,14 @@
           >
             <!-- grid item icon -->
             <div class="mb-[15px]">
-              <i class="ri-home-4-fill text-4xl text-accent-500"></i>
+              <i class="ri-home-4-line text-4xl text-accent-500"></i>
             </div>
 
             <!-- grid item title -->
-            <h3 class="h3 mb-[10px] text-white">Experts Techinicans</h3>
+            <h3 class="h3 mb-[10px] text-white">المنازل</h3>
             <!--grid item description   -->
-            <p class="text-slate-50 font-light leading-normal max-w-[300px]">
-              Lorem ipsum dolor sit amet consectetur adipisic alias totam ve!
+            <p class="h5 text-slate-50 font-light leading-normal max-w-[300px]">
+              خدمات خاصه بالمنازل و الوحدات السكنيه
             </p>
           </div>
           <!-- grid item -->
@@ -249,14 +151,14 @@
           >
             <!-- grid item icon -->
             <div class="mb-[15px]">
-              <i class="ri-home-4-fill text-4xl text-accent-500"></i>
+              <i class="ri-building-4-line text-4xl text-accent-500"></i>
             </div>
 
             <!-- grid item title -->
-            <h3 class="h3 mb-[10px] text-white">Experts Techinicans</h3>
+            <h3 class="h3 mb-[10px] text-white">البنايات</h3>
             <!--grid item description   -->
-            <p class="text-slate-50 font-light leading-normal max-w-[300px]">
-              Lorem ipsum dolor sit amet consectetur adipisic alias totam ve!
+            <p class="h5 text-slate-50 font-light leading-normal max-w-[300px]">
+              خدمات خاصه للبنايات و الشركات
             </p>
           </div>
           <!-- grid item -->
@@ -265,14 +167,14 @@
           >
             <!-- grid item icon -->
             <div class="mb-[15px]">
-              <i class="ri-home-4-fill text-4xl text-accent-500"></i>
+              <i class="ri-apple-line text-4xl text-accent-500"></i>
             </div>
 
             <!-- grid item title -->
-            <h3 class="h3 mb-[10px] text-white">Experts Techinicans</h3>
+            <h3 class="h3 mb-[10px] text-white">ايفون</h3>
             <!--grid item description   -->
-            <p class="text-slate-50 font-light leading-normal max-w-[300px]">
-              Lorem ipsum dolor sit amet consectetur adipisic alias totam ve!
+            <p class="h5 text-slate-50 font-light leading-normal max-w-[300px]">
+              تطبيق خاص بهواتف الايفون
             </p>
           </div>
           <!-- grid item -->
@@ -281,14 +183,14 @@
           >
             <!-- grid item icon -->
             <div class="mb-[15px]">
-              <i class="ri-home-4-fill text-4xl text-accent-500"></i>
+              <i class="ri-android-line text-4xl text-accent-500"></i>
             </div>
 
             <!-- grid item title -->
-            <h3 class="h3 mb-[10px] text-white">Experts Techinicans</h3>
+            <h3 class="h3 mb-[10px] text-white">اندرويد</h3>
             <!--grid item description   -->
-            <p class="text-slate-50 font-light leading-normal max-w-[300px]">
-              Lorem ipsum dolor sit amet consectetur adipisic alias totam ve!
+            <p class="h5 text-slate-50 font-light leading-normal max-w-[300px]">
+              تطبيق خاص بهواتف الاندرويد
             </p>
           </div>
         </div>
@@ -306,16 +208,9 @@
         <div
           class="flex flex-col xl:flex-row items-center justify-between h-full"
         >
-          <div class="py-12 download__text xl:w-[48%] text-left xl:text-left">
+          <div class="py-12 download__text xl:w-[48%] text-right xl:text-right">
             <h1 class="h1 mb-6">
-              You Can Download Our App Now<span class="text-accent-500"
-                >...</span
-              >
-              <br />
-              We're On Google Play Store And Apple Store<span
-                class="text-accent-500"
-                >.</span
-              >
+              بإمكانك تحميل التطبيق الخاص بنا من على جوجل بلاي او ابل ستور
             </h1>
 
             <div class="flex flex-col xl:flex-row items-center gap-x-3">
@@ -323,20 +218,20 @@
                 class="flex items-center bg-primary-700 text-white py-[10px] px-[26px] w-max gap-x-2 mb-[26px] rounded-[15px] mx-0 xl:mx-0 btn btn-sm btn-outline cursor-pointer"
               >
                 <i class="ri-google-play-line text-3xl text-secondary-400"></i>
-                <div>DownLoad</div>
+                <div>تحمبل الآن</div>
               </div>
               <div
                 class="flex items-center bg-primary-700 text-white py-[10px] px-[26px] w-max gap-x-2 mb-[26px] rounded-[15px] mx-0 xl:mx-0 btn btn-sm btn-outline cursor-pointer"
               >
                 <i class="ri-apple-fill text-3xl text-secondary-400"></i>
-                <div>DownLoad</div>
+                <div>تحمبل الآن</div>
               </div>
             </div>
           </div>
           <div
             class="py-12 max-w-[600px] self-end download__image hidden xl:flex"
           >
-            <img src="./assets/imgs/Fastteclogo(png)1.png" alt="" />
+            <img src="./assets/imgs/apps.png" alt="" />
           </div>
         </div>
       </div>
@@ -350,42 +245,49 @@
       <div class="container mx-auto h-full">
         <!-- text & image -->
         <div
-          class="flex flex-row xl:flex-row items-center justify-between h-full"
+          class="flex flex-col xl:flex-row items-center justify-between h-full"
         >
-          <div class="py-12 download__text xl:w-[48%] text-left">
-            <h1 class="h1 mb-6 pt-[50PX]">
-              Don<span class="text-accent-500">'</span
-              ><span class="normal-case">t</span> hesitate to get in touch<span
-                class="text-accent-500"
-                >.</span
-              >
-            </h1>
+          <div class="py-12 hidden xl:flex">
+            <img
+              class="max-h-[750px] rounded-lg"
+              src="./assets/imgs/FastTecManual_2.gif"
+              alt=""
+            />
+          </div>
+          <div class="py-12 xl:w-[48%] text-right">
+            <h1 class="h1 mb-6 pt-[50px]">لا تتردد في التواصل معنا عبر...</h1>
 
-            <div class="flex flex-row xl:flex-row items-center gap-x-2">
+            <div class="flex flex-row xl:flex-row items-center gap-x-5">
               <div
                 class="flex items-center btn-outline text-accent-500 p-[15px] rounded-[10px] w-max gap-x-2 mb-[26px] mx-0 xl:mx-0 cursor-pointer"
               >
-                <i class="ri-facebook-fill text-3xl"></i>
+                <a href="https://www.facebook.com/fastteckw" target="_blank">
+                  <i class="ri-facebook-fill text-3xl"></i>
+                </a>
               </div>
               <div
                 class="flex items-center btn-outline text-accent-500 p-[15px] rounded-[10px] w-max gap-x-2 mb-[26px] mx-0 xl:mx-0 cursor-pointer"
               >
-                <i class="ri-twitter-fill text-3xl"></i>
+                <a href="https://www.instagram.com/fasttec_kw" target="_blank">
+                  <i class="ri-instagram-fill text-3xl"></i>
+                </a>
               </div>
               <div
                 class="flex items-center btn-outline text-accent-500 p-[15px] rounded-[10px] w-max gap-x-2 mb-[26px] mx-0 xl:mx-0 cursor-pointer"
               >
-                <i class="ri-instagram-fill text-3xl"></i>
+                <a href="https://www.tiktok.com/@fasttec_kw" target="_blank">
+                  <i class="ri-tiktok-fill text-3xl"></i>
+                </a>
               </div>
               <div
                 class="flex items-center btn-outline text-accent-500 p-[15px] rounded-[10px] w-max gap-x-2 mb-[26px] mx-0 xl:mx-0 cursor-pointer"
               >
-                <i class="ri-youtube-fill text-3xl"></i>
-              </div>
-              <div
-                class="flex items-center btn-outline text-accent-500 p-[15px] rounded-[10px] w-max gap-x-2 mb-[26px] mx-0 xl:mx-0 cursor-pointer"
-              >
-                <i class="ri-linkedin-box-fill text-3xl"></i>
+                <a
+                  href="https://www.snapchat.com/add/fasttec_kw"
+                  target="_blank"
+                >
+                  <i class="ri-snapchat-fill text-3xl"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -394,7 +296,78 @@
     </section>
     <!-- end contact -->
 
-    <div class="temp h-[4000px]"></div>
+    <!-- Footer -->
+
+    <footer class="footer pt-12 xl:pt-[150px] bg-primary-700">
+      <div class="container mx-auto pb-12 xl:pb-[100px]">
+        <div class="flex flex-col xl:flex-row gap-x-5 gap-y-10">
+          <div class="footer__item flex-1">
+            <a href="">
+              <img
+                src="./assets/imgs/Fastteclogo(png)1.png"
+                class="footer_logo"
+                alt=""
+              />
+            </a>
+            <p class="h6 mb-[20px]">أفضل إختيار لك لصيانة أعطالك</p>
+            <div>
+              <div class="flex flex-row gap-x-3 mb-10">
+                <a
+                  class="text-accent-500"
+                  href="https://www.facebook.com/fastteckw"
+                  target="_blank"
+                >
+                  <i class="ri-facebook-fill text-3xl"></i>
+                </a>
+                <a
+                  class="text-accent-500"
+                  href="https://www.instagram.com/fasttec_kw"
+                  target="_blank"
+                >
+                  <i class="ri-instagram-fill text-3xl"></i>
+                </a>
+                <a
+                  class="text-accent-500"
+                  href="https://www.tiktok.com/@fasttec_kw"
+                  target="_blank"
+                >
+                  <i class="ri-tiktok-fill text-3xl"></i>
+                </a>
+                <a
+                  class="text-accent-500"
+                  href="https://www.snapchat.com/add/fasttec_kw"
+                  target="_blank"
+                >
+                  <i class="ri-snapchat-fill text-3xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__item flex-1 mt-10 ">
+            <p class="h6 mb-10">التحميل</p>
+            <div>
+              <div class="flex flex-row gap-x-3 mb-10 ">
+                <a
+                  class="text-accent-500"
+                  href="https://www.facebook.com/fastteckw"
+                  target="_blank"
+                >
+                  <i class="ri-google-play-fill text-3xl"></i>
+                </a>
+                <a
+                  class="text-accent-500"
+                  href="https://www.instagram.com/fasttec_kw"
+                  target="_blank"
+                >
+                  <i class="ri-apple-fill text-3xl"></i>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- scripts -->
     <!-- main -->
     <script src="./js/main.js"></script>
